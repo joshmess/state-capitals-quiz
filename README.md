@@ -2,4 +2,4 @@
 
 CSCI 4060 Project 4
 
-JEffery John & Josh Messitte
+Jeffery John & Josh Messitte
