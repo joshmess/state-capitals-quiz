@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-public class QuizDBHelper extends SQLiteOpenHelper {
+public class DBHelper extends SQLiteOpenHelper {
 
     private static final String DEBUG_TAG = "QuizDBHelper";
 
@@ -33,7 +33,7 @@ public class QuizDBHelper extends SQLiteOpenHelper {
     public static final String QUIZZES_COLUMN_SCORE = "score";
 
     // This is a reference to the only instance for the helper.
-    private static QuizDBHelper helperInstance;
+    private static DBHelper helperInstance;
 
     //Create table constant for questions
     private static final String CREATE_QUESTIONS =
@@ -59,14 +59,14 @@ public class QuizDBHelper extends SQLiteOpenHelper {
                     + ")";
 
     //private constructor
-    private QuizDBHelper( Context context ) {
+    private DBHelper(Context context ) {
         super( context, DB_NAME, null, DB_VERSION );
     }
 
-    public static synchronized QuizDBHelper getInstance( Context context ) {
+    public static synchronized DBHelper getInstance(Context context ) {
         // check if the instance already exists and if not, create the instance
         if( helperInstance == null ) {
-            helperInstance = new QuizDBHelper( context.getApplicationContext() );
+            helperInstance = new DBHelper( context.getApplicationContext() );
         }
         return helperInstance;
     }
