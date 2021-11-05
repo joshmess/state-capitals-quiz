@@ -1,51 +1,51 @@
-State,Capital city
-Alabama,Montgomery
-Alaska,Juneau
-Arizona,Phoenix
-Arkansas,Little Rock
-California,Sacramento
-Colorado,Denver
-Connecticut,Hartford
-Delaware,Dover
-Florida,Tallahassee
-Georgia,Atlanta
-Hawaii,Honolulu
-Idaho,Boise
-Illinois,Springfield
-Indiana,Indianapolis
-Iowa,Des Moines
-Kansas,Topeka
-Kentucky,Frankfort
-Louisiana,Baton Rouge
-Maine,Augusta
-Maryland,Annapolis
-Massachusetts,Boston
-Michigan,Lansing
-Minnesota,Saint Paul
-Mississippi,Jackson
-Missouri,Jefferson City
-Montana,Helena
-Nebraska,Lincoln
-Nevada,Carson City
-New Hampshire,Concord
-New Jersey,Trenton
-New Mexico,Santa Fe
-New York,Albany
-North Carolina,Raleigh
-North Dakota,Bismarck
-Ohio,Columbus
-Oklahoma,Oklahoma City
-Oregon,Salem
-Pennsylvania,Harrisburg
-Rhode Island,Providence
-South Carolina,Columbia
-South Dakota,Pierre
-Tennessee,Nashville
-Texas,Austin
-Utah,Salt Lake City
-Vermont,Montpelier
-Virginia,Richmond
-Washington,Olympia
-West Virginia,Charleston
-Wisconsin,Madison
-Wyoming,Cheyenne
+State,Capital city,City 1,City 2
+Alabama,Montgomery,Birmingham,Tuscaloosa
+Alaska,Juneau,Anchorage,Barrow
+Arizona,Phoenix,Avondale,Bisbee
+Arkansas,Little Rock,Fort Smith,Fayetville
+California,Sacramento,Los Angeles,San Diego
+Colorado,Denver,Colorado Springs,Aurora
+Connecticut,Hartford,Bridgeport,New Haven
+Delaware,Dover,Wilmington,Newark
+Florida,Tallahassee,Jacksonville,Miami
+Georgia,Atlanta,Macon,Savannah
+Hawaii,Honolulu,Hilo,Pearl City
+Idaho,Boise,Nampa,Meridian
+Illinois,Springfield,Chicago,Aurora
+Indiana,Indianapolis,Bloomington,Fort Wayne
+Iowa,Des Moines,Grinnell,Davenport
+Kansas,Topeka,Witchita,Overland Park
+Kentucky,Frankfort,Louisville,Lexington
+Louisiana,Baton Rouge,New Orleans,Lafayette
+Maine,Augusta,Portland,Lewiston
+Maryland,Annapolis,Rockville,Baltimore
+Massachusetts,Boston,Worchester,Springfield
+Michigan,Lansing,Detroit,Grand Rapids
+Minnesota,Saint Paul,Minneapolis,Rochester
+Mississippi,Jackson,Gulfport,Southaven
+Missouri,Jefferson City,Kansas City,Springfield
+Montana,Helena,Billings,Great Falls
+Nebraska,Lincoln,Omaha,Bellevue
+Nevada,Carson City,Paradise,Reno
+New Hampshire,Concord,Machester,Nashua
+New Jersey,Trenton,Newark,Jersey City
+New Mexico,Santa Fe,Albequerque,Las Cruces
+New York,Albany,New York City,Buffalo
+North Carolina,Raleigh,Charolette,Greensboro
+North Dakota,Bismarck,Fargo,Grand Forks
+Ohio,Columbus,Cleveland,Cincinati
+Oklahoma,Oklahoma City,Tulsa,Norman
+Oregon,Salem,Eugene,Gresham
+Pennsylvania,Harrisburg,Philidelphia,Pittsburgh
+Rhode Island,Providence,Cranston,Warwick
+South Carolina,Columbia,Charleston,Mount Pleasant
+South Dakota,Pierre,Sioux Falls,Rapid City
+Tennessee,Nashville,Memphis,Knoxville
+Texas,Austin,Houston,Dallas
+Utah,Salt Lake City,West Valley City,Provo
+Vermont,Montpelier,Burlingotn,Barre
+Virginia,Richmond,Arlington,Fairfax
+Washington,Olympia,Seattle,Spokane
+West Virginia,Charleston,Huntington,Morgantown
+Wisconsin,Madison,Milwaukee,Green Bay
+Wyoming,Cheyenne,Casper,Jackson
