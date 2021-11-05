@@ -49,12 +49,12 @@ public class QuizDBHelper extends SQLiteOpenHelper {
             "create table " + TABLE_QUIZZES + " ("
                     + QUIZZES_COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                     + QUIZZES_COLUMN_DATE + " TEXT, "
-                    + QUIZZES_COLUMN_Q1 + " TEXT, "
-                    + QUIZZES_COLUMN_Q2 + " TEXT, "
-                    + QUIZZES_COLUMN_Q3 + " TEXT, "
-                    + QUIZZES_COLUMN_Q4 + " TEXT, "
-                    + QUIZZES_COLUMN_Q5 + " TEXT, "
-                    + QUIZZES_COLUMN_Q6 + " TEXT, "
+                    + QUIZZES_COLUMN_Q1 + " INTEGER, "
+                    + QUIZZES_COLUMN_Q2 + " INTEGER, "
+                    + QUIZZES_COLUMN_Q3 + " INTEGER, "
+                    + QUIZZES_COLUMN_Q4 + " INTEGER, "
+                    + QUIZZES_COLUMN_Q5 + " INTEGER, "
+                    + QUIZZES_COLUMN_Q6 + " INTEGER, "
                     + QUIZZES_COLUMN_SCORE + " INTEGER  "
                     + ")";
 
