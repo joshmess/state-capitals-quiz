@@ -37,7 +37,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     //Create table constant for questions
     private static final String CREATE_QUESTIONS =
-            "create table " + TABLE_QUESTIONS + " ("
+            "CREATE TABLE IF NOT EXISTS " + TABLE_QUESTIONS + " ("
                     + QUESTIONS_COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                     + QUESTIONS_COLUMN_STATE + " TEXT, "
                     + QUESTIONS_COLUMN_CAPITAL + " TEXT, "
@@ -46,7 +46,7 @@ public class DBHelper extends SQLiteOpenHelper {
                     + ")";
     //Create table constant for quizzes
     private static final String CREATE_QUIZZES =
-            "create table " + TABLE_QUIZZES + " ("
+            "CREATE TABLE IF NOT EXISTS " + TABLE_QUIZZES + " ("
                     + QUIZZES_COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                     + QUIZZES_COLUMN_DATE + " TEXT, "
                     + QUIZZES_COLUMN_Q1 + " INTEGER, "

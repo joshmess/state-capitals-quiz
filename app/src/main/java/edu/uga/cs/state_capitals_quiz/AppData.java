@@ -60,6 +60,7 @@ public class AppData {
         values.put( DBHelper.QUESTIONS_COLUMN_CITY2, question.getCity2() );
 
 
+
         long id = db.insert( DBHelper.TABLE_QUESTIONS, null, values );
 
         // store the id (the primary key) in the JobLead instance, as it is now persistent
@@ -68,6 +69,11 @@ public class AppData {
         Log.d( DEBUG_TAG, "Stored new question with id: " + String.valueOf( question.getId() ) );
 
         return question;
+    }
+
+    public void delete(){
+        db.delete(DBHelper.TABLE_QUESTIONS,null,null);
+        db.execSQL( "DELETE FROM SQLITE_SEQUENCE WHERE NAME = '" + DBHelper.TABLE_QUESTIONS + "'" );
     }
 
 

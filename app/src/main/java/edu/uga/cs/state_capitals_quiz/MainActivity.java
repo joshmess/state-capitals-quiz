@@ -22,13 +22,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         appData = new AppData(this);
+        appData.open();
+        appData.delete();
         new QuestionDBWriter().execute();
     }
 
     public class QuestionDBWriter extends AsyncTask<Question, Question> {
 
         protected ArrayList<Question> doInBackground( ) {
-            ArrayList<Question> allQuestions = new ArrayList<Question>();
+            ArrayList<Question> allQuestions = new ArrayList<>();
             try {
                 InputStream in_s = getAssets().open("state_capitals.csv");
                 BufferedReader reader = new BufferedReader(new InputStreamReader(in_s));
@@ -46,9 +48,11 @@ public class MainActivity extends AppCompatActivity {
                     appData.storeQuestion(newQuestion);
                 }
 
+
             }catch (Exception e){
                 Log.e(TAG, e.toString());
             }
+
             return allQuestions;
         }
 
@@ -64,6 +68,52 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onResume() {
+        Log.d( DEBUG_TAG, "MainActivity.onResume()" );
+        // open the database in onResume
+        if( appData != null )
+            appData.open();
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        Log.d( DEBUG_TAG, "MainActivity.onPause()" );
+        // close the database in onPause
+        if( appData != null )
+            appData.close();
+        super.onPause();
+    }
+
+    // The following activity callback methods are not needed and are for
+    // educational purposes only.
+    @Override
+    protected void onStart() {
+        Log.d( DEBUG_TAG, "MainActivity.onStart()" );
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop() {
+        Log.d( DEBUG_TAG, "MainActivity.onStop()" );
+        super.onStop();
+
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        Log.d( DEBUG_TAG, "MainActivity.onDestroy()" );
+        super.onDestroy();
+
+    }
+
+    @Override
+    protected void onRestart() {
+        Log.d( DEBUG_TAG, "MainActivity.onRestart()" );
+        super.onRestart();
+    }
 
 
 }
