@@ -71,7 +71,7 @@ public class AppData {
         return question;
     }
 
-    public void delete(){
+    public void deleteQuestions(){
         db.delete(DBHelper.TABLE_QUESTIONS,null,null);
         db.execSQL( "DELETE FROM SQLITE_SEQUENCE WHERE NAME = '" + DBHelper.TABLE_QUESTIONS + "'" );
     }

@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         appData = new AppData(this);
         appData.open();
-        appData.delete();
+        appData.deleteQuestions();
         new QuestionDBWriter().execute();
     }
 
