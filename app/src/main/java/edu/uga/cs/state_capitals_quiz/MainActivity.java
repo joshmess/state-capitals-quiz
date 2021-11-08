@@ -2,8 +2,11 @@ package edu.uga.cs.state_capitals_quiz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -15,16 +18,27 @@ public class MainActivity extends AppCompatActivity {
     public static final String DEBUG_TAG = "MainActivity";
     private AppData appData;
     final String TAG = "CSVReading";
+    private Button beginQuiz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         appData = new AppData(this);
         appData.open();
         appData.deleteQuestions();
         new QuestionDBWriter().execute();
+        beginQuiz = findViewById( R.id.continueButton );
+
+        beginQuiz.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent( v.getContext(), QuizActivity.class );
+                v.getContext().startActivity( intent );
+
+            }
+        });
     }
 
     public class QuestionDBWriter extends AsyncTask<Question, Question> {
