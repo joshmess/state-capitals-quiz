@@ -6,10 +6,12 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import java.io.Serializable;
+
 /**
  * This class is facilitates storing and restoring questions and quizzes stored.
  */
-public class AppData {
+public class AppData implements Serializable {
 
     public static final String DEBUG_TAG = "AppData";
 

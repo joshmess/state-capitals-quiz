@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private AppData appData;
     final String TAG = "CSVReading";
     private Button beginQuiz;
+    public static final String APP_DATA = "edu.uga.cs.statecapitalsquiz.AppData";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent( v.getContext(), QuizActivity.class );
-                v.getContext().startActivity( intent );
+                //intent.putExtra(APP_DATA,appData);
+                startActivity( intent );
 
             }
         });
